@@ -1,87 +1,66 @@
-# Laravel Portfolio Project
+Your task is to create a personal portfolio website using Laravel. This portfolio should showcase your skills, projects, and any other relevant information. The project will involve creating a multi-page website with a consistent layout, navigation bar, footer, and social media integration.
 
-This repository contains the source code for my personal portfolio project built using the Laravel framework. This project showcases my skills, projects, and experiences as a developer.
+Requirements:
 
-## Getting Started
+Laravel Setup:
 
-Follow these instructions to get a copy of the project up and running on your local machine.
+Set up a new Laravel project using Composer.
+Configure your database connection in the .env file.
+Database (Optional):
 
-### Prerequisites
+If you want to include a section for projects or blog posts, you can use a database to store this information. Create a migration and seed some sample data.
+Blade Layouts:
 
-Make sure you have the following software installed on your machine:
+Utilize Blade layouts to create a consistent structure for your website.
+Implement a master layout that includes a common structure for the head, navigation bar, content area, and footer.
+Navigation Bar:
 
-- PHP (>= 7.3)
-- Composer
-- Laravel
-- Node.js
-- npm
+Create a navigation bar that is consistent across all pages.
+Include links to navigate between different sections of your portfolio (Home, About Me, Projects, Contact).
+Content Sections:
 
-### Installing
+Implement separate Blade views for different sections of your portfolio (Home, About Me, Projects, Contact).
+Use the @yield directive to inject content into specific sections of the master layout.
+Home Page:
 
-1. **Clone the repository:**
+Design a visually appealing home page that introduces yourself.
+Include a call-to-action or a brief summary of your skills.
+About Me:
 
-```bash
-   git clone git@github.com:seo-asif/portfolio_project.git
-```
- 
+Create a page with detailed information about yourself, your background, and skills.
+Include a section for your education, work experience, and any certifications.
+Projects:
 
-2. **Navigate to the project directory:**
+If you are using a database, dynamically fetch and display projects on this page.
+Otherwise, manually create cards or sections to showcase a few of your notable projects.
+Contact Page:
 
-```bash
-cd portfolio_project
-```
+Design a contact page with a form that allows visitors to reach out to you.
+Include fields for name, email, message, etc.
+If possible, implement form validation.
+Footer:
 
-3. **Install PHP dependencies:**
+Create a footer that contains links to your social media profiles (GitHub, LinkedIn, Twitter, etc.).
+Add social media icons for each profile.
+Styling:
 
-```bash
-Copy code
-composer install
-```
+Apply consistent styling using CSS or a front-end framework (e.g., Bootstrap) to make your portfolio visually appealing.
+Submission:
 
-4. **Install Node.js dependencies:**
+Create a GitHub repository for your Laravel project.
+Include a README file with instructions on how to set up and run the project.
+Optionally, deploy your portfolio on a free hosting platform.
+Project Setup
+Open the terminal and run the following commands:
 
-```bash
-npm install
-```
-5. **Copy the .env.example file and rename it to .env:**
+git clone https://github.com/tanzinsunni/Personal-Portfolio-Website---Laravel
+cd Personal-Portfolio-Website---Laravel
+composer update
+Run the Development Server
+To start the Laravel development server, execute the following command:
 
-```bash
-cp .env.example .env
-```
-
-6. **Generate an application key:**
-```bash
-php artisan key:generate
-```
-
-7. **Configure database settings in the .env file.**
-
-Run database migrations:
-
-```bash
-php artisan migrate
-```
-8. **Compile assets:**
-
-```bash
-npm run dev
-```
-
-9. **Start the development server:**
-
-```bash
 php artisan serve
-```
-The application should now be running at http://localhost:8000.
+Test the Route
+Visit the following URL in your web browser to test the route:
 
-
-## Built With Laravel - The PHP framework for web artisans.
-Bootstrap - Front-end framework.
-Vue.js - JavaScript framework for building user interfaces.
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Acknowledgments
-Hat tip to anyone whose code was used.
-Inspiration. etc.
-Feel free to explore the code and use it as a reference for your own projects. If you have any questions or suggestions, please create an issue or reach out to me directly.
+http://127.0.0.1:8000
