@@ -1,13 +1,13 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\Category;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-    public function index(){
-        return view('index');
+    public function home(){
+        return view('home');
     }
 
     public function about(){
@@ -15,7 +15,11 @@ class HomeController extends Controller
     }
 
     public function projects(){
-        return view('projects');
+        $allprojects = Category::where('is_active', true)->get();
+        return view('projects', compact('allprojects'));
+    }
+    public function services(){
+        return view('services');
     }
 
     public function contact(){

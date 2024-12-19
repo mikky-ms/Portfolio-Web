@@ -1,0 +1,108 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+/* Section Styles */
+.py-5 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.bg-black {
+    background-color: #000;
+}
+
+.bg-gradient-primary-to-secondary {
+    background: linear-gradient(135deg, #007bff, #6c757d);
+}
+
+/* Container and Text Styles */
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.display-5 {
+    font-size: 2.5rem;
+}
+
+.display-4 {
+    font-size: 3rem;
+}
+
+/* Project Card Styles */
+.card {
+    background-color: #1e1e1e;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+}
+
+.category {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.category img {
+    border-radius: 8px;
+    margin-right: 20px;
+    width: 150px;
+    height: auto;
+}
+
+.category h2 {
+    font-size: 1.75rem;
+    color: #ffc107;
+}
+
+.category p {
+    color: #d3d3d3;
+}
+
+/* Button Styles */
+.btn {
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-outline-light {
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.btn-outline-light:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Responsive Styles */
+@media (max-width: 576px) {
+    .display-5 {
+        font-size: 2rem;
+    }
+    
+    .display-4 {
+        font-size: 2.5rem;
+    }
+    
+    .category {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .category img {
+        margin-bottom: 10px;
+    }
+}

@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Portfolio of Tahmina Tanzin Sunni</title>
+        <title>Portfolio Web</title>
         <link rel="icon" type="image/x-icon" href="{{ asset('images/favicon.ico') }}" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
         <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet" />
